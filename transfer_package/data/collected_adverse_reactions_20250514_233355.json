@@ -1,0 +1,68 @@
+[
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_1?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Одышка",
+        "frequency": "Нечасто",
+        "severity": "Средняя",
+        "confidence": 0.84,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_2?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Снижение давления",
+        "frequency": "Очень часто",
+        "severity": "Легкая",
+        "confidence": 0.88,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_3?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Тромбоцитопения",
+        "frequency": "Часто",
+        "severity": "Средняя",
+        "confidence": 0.93,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/demo_article_1?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из ScienceDirect",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Тромбоцитопения",
+        "frequency": "Часто",
+        "severity": "Средняя",
+        "confidence": 0.9,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/demo_article_2?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из ScienceDirect",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Нефротоксичность",
+        "frequency": "Редко",
+        "severity": "Тяжелая",
+        "confidence": 0.93,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/demo_article_3?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из ScienceDirect",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Диарея",
+        "frequency": "Очень часто",
+        "severity": "Легкая",
+        "confidence": 0.82,
+        "collection_date": "2025-05-14"
+    }
+]

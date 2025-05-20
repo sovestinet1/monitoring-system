@@ -1,0 +1,6 @@
+patient_id,age,gender,weight,drug_name,dosage,duration,reaction,severity,factors,sensitivity
+1,45,M,70,Aspirin,500mg,7 days,Nausea,Moderate,"Individual sensitivity, Unknown factors","High"
+2,60,F,65,Metformin,850mg,30 days,Diarrhea,Severe,"Individual sensitivity, Unknown factors","Medium"
+3,30,M,80,Amoxicillin,1000mg,10 days,Skin rash,Mild,"Individual sensitivity, Unknown factors","Low"
+4,50,F,55,Ibuprofen,400mg,5 days,Dizziness,Moderate,"Individual sensitivity, Unknown factors","Medium"
+5,40,M,90,Paracetamol,1000mg,3 days,Headache,Severe,"Individual sensitivity, Unknown factors","High" 

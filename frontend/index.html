@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система мониторинга нежелательных реакций</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#" id="logo-home">
+                    <i class="fas fa-pills"></i>
+                    <h1>ФармаМонитор</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="nav-home" class="active">Главная</a></li>
+                    <li><a href="#" id="nav-drugs">Препараты</a></li>
+                    <li><a href="#" id="nav-upload">Анализ данных</a></li>
+                    <li><a href="#" id="nav-about">О системе</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Главная секция -->
+            <section id="section-home" class="active-section">
+                <div class="hero">
+                    <h2>Мониторинг нежелательных реакций на лекарственные препараты</h2>
+                    <p>Автоматизированная система для анализа и прогнозирования нежелательных реакций</p>
+                    <div class="hero-buttons">
+                        <button id="btn-explore-drugs" class="btn btn-primary">Изучить препараты</button>
+                        <button id="btn-upload-data" class="btn btn-secondary">Загрузить данные</button>
+                    </div>
+                </div>
+
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Анализ данных</h3>
+                        <p>Автоматический сбор и анализ информации о нежелательных реакциях из медицинских источников</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Машинное обучение</h3>
+                        <p>Использование передовых алгоритмов для выявления и предсказания нежелательных реакций</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Визуализация</h3>
+                        <p>Наглядное представление результатов анализа данных и научных статей с помощью графиков и таблиц</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция с препаратами -->
+            <section id="section-drugs" class="hidden-section">
+                <div class="section-header">
+                    <h2>База данных препаратов</h2>
+                    <div class="section-actions">
+                        <button id="refresh-drugs-data" class="btn btn-secondary"><i class="fas fa-sync-alt"></i> Обновить данные</button>
+                        <button id="back-to-home-drugs" class="btn btn-home"><i class="fas fa-home"></i> Главное меню</button>
+                    </div>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" id="drug-search" placeholder="Поиск препарата...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="drugs-list">
+                    <!-- Список препаратов будет загружен через JavaScript -->
+                    <div class="loading">Загрузка препаратов...</div>
+                </div>
+
+                <div id="drug-details" class="drug-details hidden">
+                    <div class="drug-header">
+                        <h3 id="drug-name">Название препарата</h3>
+                        <span id="drug-substance" class="drug-substance">Действующее вещество</span>
+                    </div>
+                    
+                    <div class="reactions-table">
+                        <h4>Нежелательные реакции</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Реакция</th>
+                                    <th>Частота</th>
+                                    <th>Тяжесть</th>
+                                    <th>Описание</th>
+                                </tr>
+                            </thead>
+                            <tbody id="reactions-list">
+                                <!-- Данные о реакциях будут загружены через JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция загрузки данных -->
+            <section id="section-upload" class="hidden-section">
+                <div class="section-header">
+                    <h2>Анализ данных о нежелательных реакциях</h2>
+                    <button id="back-to-home-upload" class="btn btn-home"><i class="fas fa-home"></i> Главное меню</button>
+                </div>
+                
+                <p class="section-description">Загрузите CSV-файл с данными о пациентах для анализа нежелательных реакций.</p>
+                
+                <div class="upload-container">
+                    <div class="upload-area" id="upload-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Перетащите файл сюда или <span class="upload-link">выберите файл</span></p>
+                        <input type="file" id="file-upload" accept=".csv" hidden>
+                    </div>
+                    <div class="file-info hidden" id="file-info">
+                        <div class="file-name" id="file-name">filename.csv</div>
+                        <div class="file-size" id="file-size">размер файла</div>
+                        <button class="btn btn-sm btn-danger" id="btn-remove-file"><i class="fas fa-times"></i></button>
+                    </div>
+                    <button class="btn btn-primary" id="btn-analyze" disabled>Анализировать</button>
+                </div>
+
+                <div id="analysis-results" class="analysis-results hidden">
+                    <h3>Результаты анализа</h3>
+                    
+                    <div class="results-summary">
+                        <div class="summary-card">
+                            <div class="summary-value" id="total-patients">0</div>
+                            <div class="summary-label">Всего пациентов</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-value" id="reactions-count">0</div>
+                            <div class="summary-label">Выявлено реакций</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-value" id="critical-reactions">0</div>
+                            <div class="summary-label">Критических реакций</div>
+                        </div>
+                    </div>
+                    
+                    <div class="results-details">
+                        <h4>Выявленные нежелательные реакции</h4>
+                        <div id="detected-reactions">
+                            <!-- Сюда будут добавлены карточки с реакциями -->
+                        </div>
+                    </div>
+                    
+                    <div class="recommendations">
+                        <h4>Рекомендации</h4>
+                        <ul id="recommendations-list">
+                            <!-- Сюда будут добавлены рекомендации -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Новая секция для сбора данных из научных источников -->
+                <div id="sources-section" class="main-section">
+                    <div class="section-header">
+                        <h2>Источники данных</h2>
+                        <div class="section-actions">
+                            <button id="refresh-sources" class="btn"><i class="fas fa-sync"></i> Обновить</button>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="collection-panel">
+                            <h3>Сбор данных о нежелательных реакциях</h3>
+                            <div class="collection-form">
+                                <div class="form-group">
+                                    <label for="collection-query">Запрос (препарат):</label>
+                                    <input type="text" id="collection-query" placeholder="Например: aspirin">
+                                </div>
+                                <div class="form-group">
+                                    <label>Источники данных:</label>
+                                    <div id="sources-list" class="sources-list">
+                                        <div class="loading-indicator">Загрузка источников...</div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="max-articles">Максимальное количество статей:</label>
+                                        <input type="number" id="max-articles" min="1" max="20" value="5">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="use-pharm-berta" class="checkbox-label">
+                                            <input type="checkbox" id="use-pharm-berta">
+                                            Использовать PharmBERTa для анализа
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button id="start-collection" class="btn btn-primary">Запустить сбор данных</button>
+                                </div>
+                            </div>
+                            <div id="collection-status" class="collection-status"></div>
+                            <div id="collection-results" class="collection-results-container"></div>
+                        </div>
+                        
+                        <!-- Убрана панель доступных источников данных -->
+                        <!--
+                        <div class="sources-panel">
+                            <h3>Доступные источники данных</h3>
+                            <div id="sources-table" class="sources-table">
+                                <div class="loading-indicator">Загрузка источников...</div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- О системе -->
+            <section id="section-about" class="hidden-section">
+                <div class="section-header">
+                    <h2>О системе</h2>
+                    <button id="back-to-home-about" class="btn btn-home"><i class="fas fa-home"></i> Главное меню</button>
+                </div>
+                
+                <div class="about-content">
+                    <h3>Система мониторинга нежелательных реакций на лекарственные препараты</h3>
+                    <p>
+                        Данная система разработана для автоматизированного сбора, анализа и 
+                        прогнозирования нежелательных реакций на лекарственные препараты.
+                    </p>
+                    
+                    <h4>Возможности системы:</h4>
+                    <ul>
+                        <li>Автоматический сбор данных о нежелательных реакциях с медицинских сайтов и научных статей</li>
+                        <li>Анализ данных с использованием методов машинного обучения</li>
+                        <li>Визуализация результатов</li>
+                        <li>Загрузка и анализ пользовательских данных</li>
+                        <li>Глубокий анализ научных статей с помощью специализированной нейросети PharmBERTa</li>
+                    </ul>
+                    
+                    <h4>Технологии:</h4>
+                    <ul>
+                        <li>Backend: Python, Flask, SQLAlchemy, Pandas, Matplotlib</li>
+                        <li>СУБД: PostgreSQL, MongoDB</li>
+                        <li>Frontend: HTML, CSS, JavaScript</li>
+                        <li>Машинное обучение и NLP: scikit-learn, NLTK, PharmBERTa (Transformers, PyTorch)</li>
+                    </ul>
+                    
+                    <div class="version-info">
+                        <p>Версия: <span class="version">1.2.0</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ФармаМонитор - Система мониторинга нежелательных реакций</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

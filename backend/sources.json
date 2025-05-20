@@ -1,0 +1,140 @@
+{
+    "scientific_journals": [
+        {
+            "name": "PubMed",
+            "base_url": "https://pubmed.ncbi.nlm.nih.gov",
+            "search_url": "https://pubmed.ncbi.nlm.nih.gov/?term={query}&size=100",
+            "api_available": true,
+            "api_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/",
+            "description": "Крупнейшая база данных медицинских и биологических публикаций",
+            "content_type": "scientific_articles",
+            "article_selector": ".article-details",
+            "requires_authorization": false,
+            "query_examples": ["adverse drug reactions", "drug side effects", "pharmacovigilance"],
+            "severity_profile": {
+                "Тяжелая": 0.25,
+                "Средняя": 0.50,
+                "Легкая": 0.25
+            }
+        },
+        {
+            "name": "ScienceDirect",
+            "base_url": "https://www.sciencedirect.com",
+            "search_url": "https://www.sciencedirect.com/search?qs={query}",
+            "api_available": true,
+            "api_url": "https://api.elsevier.com/content/search/sciencedirect",
+            "description": "Коллекция научных журналов по медицине и фармакологии от Elsevier",
+            "content_type": "scientific_articles",
+            "article_selector": ".ResultItem",
+            "requires_authorization": true,
+            "query_examples": ["adverse drug effects", "drug toxicity", "medication safety"],
+            "severity_profile": {
+                "Тяжелая": 0.20,
+                "Средняя": 0.60,
+                "Легкая": 0.20
+            }
+        },
+        {
+            "name": "The Lancet",
+            "base_url": "https://www.thelancet.com",
+            "search_url": "https://www.thelancet.com/action/doSearch?text={query}",
+            "api_available": false,
+            "description": "Один из старейших и наиболее уважаемых медицинских журналов",
+            "content_type": "scientific_articles",
+            "article_selector": ".search-result-item",
+            "requires_authorization": false,
+            "query_examples": ["adverse reactions", "drug safety", "pharmacovigilance"],
+            "severity_profile": {
+                "Тяжелая": 0.60,
+                "Средняя": 0.30,
+                "Легкая": 0.10
+            }
+        },
+        {
+            "name": "BMJ (British Medical Journal)",
+            "base_url": "https://www.bmj.com",
+            "search_url": "https://www.bmj.com/search/{query}",
+            "api_available": false,
+            "description": "Ведущий медицинский журнал Великобритании",
+            "content_type": "scientific_articles",
+            "article_selector": ".highwire-article-citation",
+            "requires_authorization": false,
+            "query_examples": ["adverse effects", "drug reactions", "medication safety"]
+        },
+        {
+            "name": "JAMA Network",
+            "base_url": "https://jamanetwork.com",
+            "search_url": "https://jamanetwork.com/searchresults?q={query}",
+            "api_available": false,
+            "description": "Коллекция журналов Американской медицинской ассоциации",
+            "content_type": "scientific_articles",
+            "article_selector": ".article-item",
+            "requires_authorization": false,
+            "query_examples": ["adverse drug events", "medication risks", "drug safety"]
+        }
+    ],
+    "regulatory_resources": [
+        {
+            "name": "FDA Adverse Event Reporting System (FAERS)",
+            "base_url": "https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers",
+            "data_url": "https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers",
+            "api_available": true,
+            "api_url": "https://api.fda.gov/drug/event.json",
+            "description": "База данных FDA США по нежелательным реакциям",
+            "content_type": "structured_data",
+            "requires_authorization": false,
+            "severity_profile": {
+                "Тяжелая": 0.60,
+                "Средняя": 0.25,
+                "Легкая": 0.15
+            }
+        },
+        {
+            "name": "EMA (European Medicines Agency)",
+            "base_url": "https://www.ema.europa.eu",
+            "search_url": "https://www.ema.europa.eu/en/search/search?search_api_views_fulltext={query}",
+            "api_available": true,
+            "api_url": "https://www.ema.europa.eu/en/api",
+            "description": "Европейское агентство лекарственных средств",
+            "content_type": "regulatory_documents",
+            "article_selector": ".view-content .views-row",
+            "requires_authorization": false,
+            "query_examples": ["adverse drug reactions", "pharmacovigilance", "drug safety"]
+        },
+        {
+            "name": "WHO Pharmaceuticals Newsletter",
+            "base_url": "https://www.who.int/publications/i/item/WHO-HEP-CPK-2022.1",
+            "description": "Информационный бюллетень ВОЗ по вопросам фармацевтики",
+            "content_type": "reports",
+            "requires_authorization": false
+        }
+    ],
+    "medical_databases": [
+        {
+            "name": "DrugBank",
+            "base_url": "https://go.drugbank.com",
+            "search_url": "https://go.drugbank.com/unearth/q?query={query}",
+            "api_available": true,
+            "api_url": "https://api.drugbank.com",
+            "description": "База данных о лекарственных препаратах и их побочных эффектах",
+            "content_type": "structured_data",
+            "requires_authorization": true,
+            "severity_profile": {
+                "Тяжелая": 0.15,
+                "Средняя": 0.40,
+                "Легкая": 0.45
+            }
+        },
+        {
+            "name": "MedlinePlus",
+            "base_url": "https://medlineplus.gov",
+            "search_url": "https://medlineplus.gov/search/?query={query}",
+            "api_available": false,
+            "description": "Ресурс Национальной медицинской библиотеки США с информацией о препаратах",
+            "content_type": "drug_information",
+            "article_selector": ".result-item",
+            "requires_authorization": false,
+            "query_examples": ["drug side effects", "medication warnings", "adverse reactions"]
+        }
+    ]
+} 

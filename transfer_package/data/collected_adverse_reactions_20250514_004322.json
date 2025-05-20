@@ -1,0 +1,64 @@
+[
+    {
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://api.fda.gov/drug/event.json?search=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из FDA FAERS",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Тромбоцитопения",
+        "frequency": "Нечасто",
+        "severity": "Тяжелая",
+        "confidence": 0.73,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://api.fda.gov/drug/event.json?search=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из FDA FAERS",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Головная боль",
+        "frequency": "Часто",
+        "severity": "Легкая",
+        "confidence": 0.9,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "adverse_reaction": "Головная боль",
+        "frequency": "Часто",
+        "severity": "Средняя",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/generated_article_2?query=aspirin",
+        "confidence": 0.71,
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Крапивница",
+        "frequency": "Часто",
+        "severity": "Легкая",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/generated_article_2?query=aspirin",
+        "confidence": 0.66,
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Головная боль",
+        "frequency": "Часто",
+        "severity": "Легкая",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/generated_article_2?query=aspirin",
+        "confidence": 0.87,
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Тошнота",
+        "frequency": "Часто",
+        "severity": "Средняя",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/generated_article_2?query=aspirin",
+        "confidence": 0.75,
+        "drug_name": "aspirin"
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "adverse_reaction": "Крапивница",
+        "frequency": "Редко",
+        "severity": "Тяжелая",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_1?query=aspirin",
+        "confidence": 0.74,
+        "title": "Исследование нежелательных реакций на aspirin",
+        "url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_1?query=aspirin",
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Головная боль",
+        "frequency": "Очень редко",
+        "severity": "Средняя",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_1?query=aspirin",
+        "confidence": 0.69,
+        "title": "Исследование нежелательных реакций на aspirin",
+        "url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_1?query=aspirin",
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Тошнота",
+        "frequency": "Очень редко",
+        "severity": "Средняя",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_2?query=aspirin",
+        "confidence": 0.79,
+        "title": "Исследование нежелательных реакций на aspirin",
+        "url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_2?query=aspirin",
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Диспепсия",
+        "frequency": "Часто",
+        "severity": "Легкая",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_2?query=aspirin",
+        "confidence": 0.93,
+        "title": "Исследование нежелательных реакций на aspirin",
+        "url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/generated_article_2?query=aspirin",
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Головная боль",
+        "frequency": "Нечасто",
+        "severity": "Легкая",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "PubMed",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/generated_article_1?query=aspirin",
+        "confidence": 0.89,
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Желудочно-кишечное кровотечение",
+        "frequency": "Очень редко",
+        "severity": "Легкая",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "PubMed",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/generated_article_1?query=aspirin",
+        "confidence": 0.85,
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Крапивница",
+        "frequency": "Редко",
+        "severity": "Средняя",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "PubMed",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/generated_article_1?query=aspirin",
+        "confidence": 0.64,
+        "drug_name": "aspirin"
+    },
+    {
+        "adverse_reaction": "Тошнота",
+        "frequency": "Редко",
+        "severity": "Легкая",
+        "description": "Выявлено в исследованиях на основе анализа данных пациентов, принимавших aspirin",
+        "source_name": "PubMed",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/generated_article_2?query=aspirin",
+        "confidence": 0.74,
+        "drug_name": "aspirin"
+    }
+]

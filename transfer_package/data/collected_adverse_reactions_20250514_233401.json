@@ -1,0 +1,24 @@
+[
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_1?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Диарея",
+        "frequency": "Часто",
+        "severity": "Средняя",
+        "confidence": 0.86,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_2?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Тремор",
+        "frequency": "Часто",
+        "severity": "Легкая",
+        "confidence": 0.86,
+        "collection_date": "2025-05-14"
+    }
+]

@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+"""
+Скрипт для запуска системы мониторинга нежелательных реакций
+"""
+
+import os
+import sys
+import time
+import logging
+import webbrowser
+from threading import Timer
+
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+logger = logging.getLogger('system')
+
+def open_browser():
+    """Открывает браузер с веб-интерфейсом"""
+    webbrowser.open_new('http://localhost:5001/')
+
+def run_system():
+    """Запускает систему мониторинга нежелательных реакций"""
+    logger.info("Запуск системы мониторинга нежелательных реакций...")
+    
+    # Проверяем наличие всех необходимых директорий
+    dirs_to_check = [
+        'backend', 'frontend', 'data', 'models',
+        'data/raw', 'data/processed', 'data/uploads'
+    ]
+    
+    for dir_path in dirs_to_check:
+        os.makedirs(dir_path, exist_ok=True)
+        
+    # Проверяем наличие бэкенд-приложения
+    if not os.path.exists('backend/app.py'):
+        logger.error("Не найден файл backend/app.py. Система не может быть запущена.")
+        return False
+    
+    # Проверяем наличие фронтенда
+    if not os.path.exists('frontend/index.html'):
+        logger.error("Не найден файл frontend/index.html. Система не может быть запущена.")
+        return False
+    
+    # Запускаем сервер в отдельном процессе
+    logger.info("Запуск сервера на http://localhost:5001/")
+    current_dir = os.getcwd()
+    os.chdir('backend')
+    
+    # Открываем браузер с небольшой задержкой
+    Timer(1.5, open_browser).start()
+    
+    try:
+        # Запускаем бэкенд сервер
+        os.system("python3 app.py")
+    except KeyboardInterrupt:
+        logger.info("Сервер остановлен пользователем.")
+    except Exception as e:
+        logger.error(f"Ошибка при запуске сервера: {str(e)}")
+        os.chdir(current_dir)
+        return False
+        
+    os.chdir(current_dir)
+    return True
+
+if __name__ == "__main__":
+    run_system() 

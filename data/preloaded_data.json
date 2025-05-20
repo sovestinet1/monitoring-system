@@ -1,0 +1,68 @@
+{
+    "1": {
+        "drug_info": {
+            "id": 1,
+            "name": "Аспирин",
+            "active_substance": "Ацетилсалициловая кислота"
+        },
+        "reactions": [
+            {
+                "reaction": "Анафилактический шок",
+                "frequency": "Очень редко",
+                "severity": "Тяжелая",
+                "description": "Источник: PubMed. Уверенность: 0.89"
+            },
+            {
+                "reaction": "Нефротоксичность",
+                "frequency": "Очень часто",
+                "severity": "Легкая",
+                "description": "Источник: PubMed. Уверенность: 0.73"
+            }
+        ]
+    },
+    "2": {
+        "drug_info": {
+            "id": 2,
+            "name": "Парацетамол",
+            "active_substance": "Парацетамол"
+        },
+        "reactions": [
+            {
+                "reaction": "Анафилактический шок",
+                "frequency": "Часто",
+                "severity": "Легкая",
+                "description": "Источник: PubMed. Уверенность: 0.81"
+            },
+            {
+                "reaction": "Аритмия",
+                "frequency": "Очень редко",
+                "severity": "Тяжелая",
+                "description": "Источник: PubMed. Уверенность: 0.75"
+            }
+        ]
+    },
+    "3": {
+        "drug_info": {
+            "id": 3,
+            "name": "Ибупрофен",
+            "active_substance": "Ибупрофен"
+        },
+        "reactions": []
+    },
+    "4": {
+        "drug_info": {
+            "id": 4,
+            "name": "Амоксициллин",
+            "active_substance": "Амоксициллин"
+        },
+        "reactions": []
+    },
+    "5": {
+        "drug_info": {
+            "id": 5,
+            "name": "Метформин",
+            "active_substance": "Метформин"
+        },
+        "reactions": []
+    }
+}

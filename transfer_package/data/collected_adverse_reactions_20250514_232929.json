@@ -1,0 +1,46 @@
+[
+    {
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/demo_article_1?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из FDA Adverse Event Reporting System (FAERS)",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Гепатотоксичность",
+        "frequency": "Нечасто",
+        "severity": "Средняя",
+        "confidence": 0.8,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "FDA Adverse Event Reporting System (FAERS)",
+        "source_url": "https://demo.pharmamonitor.org/fda_adverse_event_reporting_system_(faers)/demo_article_2?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из FDA Adverse Event Reporting System (FAERS)",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Брадикардия",
+        "frequency": "Часто",
+        "severity": "Средняя",
+        "confidence": 0.91,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_1?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Тромбоцитопения",
+        "frequency": "Нечасто",
+        "severity": "Тяжелая",
+        "confidence": 0.87,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_2?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Судороги",
+        "frequency": "Очень редко",
+        "severity": "Тяжелая",
+        "confidence": 0.73,
+        "collection_date": "2025-05-14"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_1?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Остановка дыхания",
+        "frequency": "Редко",
+        "severity": "Тяжелая",
+        "confidence": 0.85,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "PubMed",
+        "source_url": "https://demo.pharmamonitor.org/pubmed/demo_article_2?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из PubMed",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Мышечная слабость",
+        "frequency": "Часто",
+        "severity": "Легкая",
+        "confidence": 0.83,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/demo_article_1?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из ScienceDirect",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Сонливость",
+        "frequency": "Очень часто",
+        "severity": "Легкая",
+        "confidence": 0.86,
+        "collection_date": "2025-05-14"
+    },
+    {
+        "source_name": "ScienceDirect",
+        "source_url": "https://demo.pharmamonitor.org/sciencedirect/demo_article_2?query=aspirin",
+        "title": "Данные о нежелательных реакциях на aspirin из ScienceDirect",
+        "drug_name": "aspirin",
+        "adverse_reaction": "Нефротоксичность",
+        "frequency": "Очень редко",
+        "severity": "Тяжелая",
+        "confidence": 0.9,
+        "collection_date": "2025-05-14"
+    }
+]
