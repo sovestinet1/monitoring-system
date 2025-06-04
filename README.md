@@ -20,18 +20,3 @@ adverse_reactions_system/
 ├── requirements.txt    # Зависимости проекта
 └── README.md           # Описание проекта
 ```
-
-## Установка и запуск
-
-1. Установите зависимости проекта:
-   ```
-   pip install -r requirements.txt
-   ```
-
-2. Запустите бэкенд-сервер:
-   ```
-   python backend/app.py
-   ```
-
-3. Откройте веб-интерфейс:
-   http://localhost:5000/
